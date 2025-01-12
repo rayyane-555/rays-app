@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    
+    <div>
+        <div class="phone">
+
+            <!-- main screen -->
+            <div id="screen1" class="screen">
+                
+                <button class='b1'id="b1" onclick="showScreen(2)">3</button>
+                <button class='b2'id="b2" onclick="showScreen(3)">2</button>
+                <button class='b3'id="b3" onclick="showScreen(4)">1</button>
+               
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                <div class= 'name' id="name">RAYYANE</div>
+                <div class='box1'></div>
+                
+            </div>
+            
+            <!-- app3 -->
+            <div id="screen2" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <div class='text1'>app number 3</div>
+                <button class ='back' id     ='back'onclick="showScreen(1)"></button>
+                <div id="camera" class='camera'></div>
+                
+            
+            </div>
+
+            <!-- app 2 -->
+            <div id="screen3" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <div class='text1'>app number 2</div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                 <div id="camera" class='camera'></div>
+            </div>
+
+            <!-- app 1-->
+            <div id="screen4" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                 <div id="camera" class='camera'></div>
+                <button id="name" class='name-button'onclick="showScreen(6)">Name</button>
+                <button id="email" class='email-button'onclick="showScreen(7)">email</button>
+                <button id="date-of-birth" class='date-button'onclick="showScreen(8)">Date of Birth</button>
+                <button id="school" class='school-button'onclick="showScreen(9)">School</button>
+                <button id="classes" class='class-button'onclick="showScreen(10)">Favorite subject </button>
+              <div class="slider-container">
+                  <label for="slider" class="text5">Rate this app </label>
+                  <input  id="slider" type="range" min="0" max="5" value="5" step="0.5">
+                  <div class="slider-value">Stars: <span id="sliderValue">5</span></div>
+              </div>
+            </div> 
+                
+
+
+
+
+
+
+            
+             <!-- name screen-->
+            <div id="screen6" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <div id="camera" class='camera'></div>
+                <button class ='back2' id ='back2'onclick="showScreen(4)">Back</button>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button> 
+                <form id="nameForm">
+                    <input type="text" id="nameInput" placeholder="First and Last name" required>
+                    <button class="reset" type="submit">Submit</button>
+                </form>
+                
+            </div> 
+            <!-- email screen-->
+            <div id="screen7" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                <div id="camera" class='camera'></div>
+                <button class ='back2' id ='back2'onclick="showScreen(4)">Back</button>
+                <form id="emailform">
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                    <button class='reset'type="submite">Submite</button>
+                </form>
+
+                
+            </div> 
+            <!-- date of birth screen-->
+            <div id="screen8" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                <div id="camera" class='camera'></div>
+                <button class ='back2' id ='back2'onclick="showScreen(4)">Back</button>
+                <form id="datelform">
+                    <input type="date" id="date" placeholder="" required>
+                    <button class='reset2'type="submite">Submite</button>
+                </form>
+        
+            </div> 
+            <!-- school-->
+            <div id="screen9" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                <div id="camera" class='camera'></div>
+                <button class ='back2' id ='back2'onclick="showScreen(4)">Back</button>
+              <div class='school1'>
+                <label class="school-option" >
+                  <input type="radio" name="ob1" value="school1" required> School 1
+                </label>
+              </div>
+              <div class='school2'>
+                <label class="school-option" >
+                  <input type="radio" name="ob1" value="school1" required> School 1
+                </label>
+              </div>
+              <div class='school3'>
+                <label class="school-option" >
+                  <input type="radio" name="ob1" value="school1" required> School 1
+                </label>
+              </div>
+               <div id='ob1'class='ob1'>Binghamton High School</div>
+               <div d='ob2'class='ob2'>Vestal Senior High School</div>
+               <div d='ob3'class='ob3'>Maine-Endwell Senior High School</div>  
+            </div> 
+            <!-- subject-->
+            <div id="screen10" class="screen hidden">
+                <div id="camera" class='camera'></div>
+                <div id='on1' class ='on1'></div>
+                <div id='on2' class ='on2'></div>
+                <div id='on3' class ='on3'></div>
+                <button class ='back' id ='back'onclick="showScreen(1)"></button>
+                <div id="camera" class='camera'></div>
+                <button class ='back2' id ='back2'onclick="showScreen(4)">Back</button>
+              <div class='subject'>
+                <select id="favorite subject" name="fruits" >
+                  <option value="" disabled selected>Choose a subject</option>
+                  <option value="apple">Science</option>
+                  <option value="banana">history</option>
+                  <option value="cherry">Mathematics</option>
+                  <option value="date">Art</option>
+                </select>
+                <div class='sub' >Whats your favorite subject?</div>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
