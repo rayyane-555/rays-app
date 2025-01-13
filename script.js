@@ -12,9 +12,7 @@ function showScreen(screenNumber) {
 const slider = document.getElementById('slider');
 const sliderValue = document.getElementById('sliderValue');
 
-slider.addEventListener('input', () => {
-  sliderValue.textContent = slider.value;
-});
+
 
 document.getElementById('nameForm').addEventListener('submit', function(event) {
   event.preventDefault();  
