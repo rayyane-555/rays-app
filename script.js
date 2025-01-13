@@ -27,3 +27,5 @@ document.getElementById('datelform').addEventListener('submit', function(event) 
   document.getElementById('date').value = '';  
 });
 
+
+
